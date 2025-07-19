@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Cotización - Seguros XYZ</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Compañía de Seguros XYZ</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Nosotros</a>
+      <a href="quote.html">Cotizar</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Solicitar Cotización</h2>
+      <form id="quote-form">
+        <label>Nombre:<br><input type="text" name="name" required></label><br>
+        <label>Email:<br><input type="email" name="email" required></label><br>
+        <label>Teléfono:<br><input type="tel" name="phone" required></label><br>
+        <label>Detalle:<br><textarea name="details" required></textarea></label><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="msg"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Seguros XYZ</p>
+  </footer>
+</body>
+</html>
