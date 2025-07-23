@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de ejemplo con chatbot, tema claro/oscuro y testimonios">
+    <meta name="keywords" content="ejemplo, chatbot, testimonios, politica de privacidad, terminos de uso">
+    <title>Proyecto de Ejemplo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+<header>
+    <h1>Bienvenido</h1>
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    <label for="font-size">Tamaño de fuente</label>
+    <input type="range" id="font-size" name="font-size" min="14" max="24" value="16">
+</header>
+<main>
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <article>
+            <img src="https://via.placeholder.com/150" alt="Foto de usuario satisfecho">
+            <p>"Excelente servicio y atención." – Cliente A</p>
+        </article>
+    </section>
+    <section id="formulario">
+        <h2>Contáctanos</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" pattern="\+?[0-9]{7,15}" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+<a id="whatsapp" href="https://wa.me/123456789" target="_blank" aria-label="Contactar por WhatsApp">WhatsApp</a>
+<button id="chatbot-toggle" aria-label="Abrir chatbot">Chatbot</button>
+<div id="chatbot" hidden>
+    <div id="chat-log"></div>
+    <input type="text" id="chat-input" placeholder="Escribe tu pregunta...">
+    <button id="send-chat">Enviar</button>
+</div>
+<footer>
+    <a href="privacy.html">Política de Privacidad</a> |
+    <a href="terms.html">Términos de Uso</a>
+</footer>
+</body>
+</html>
