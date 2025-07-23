@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Segusocial - Tu aliado en seguros de vida, salud, hogar y más">
+  <meta name="keywords" content="seguros, soat, vida, salud, automovil, hogar">
+  <title>Segusocial - Agencia de Seguros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" defer>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet" defer>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 scroll-smooth transition-colors" data-theme="light">
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-50 shadow px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-4">
+      <img src="logo.jpg" alt="Logo de Segusocial" class="h-10">
+      <h1 class="text-xl font-bold text-blue-800">Segusocial</h1>
+    </div>
+    <nav class="space-x-4 text-sm font-semibold">
+      <a href="#inicio" class="text-gray-800 hover:text-blue-800">Inicio</a>
+      <a href="#sobre" class="text-gray-800 hover:text-blue-800">Sobre Nosotros</a>
+      <a href="#servicios" class="text-gray-800 hover:text-blue-800">Servicios</a>
+      <a href="#productos" class="text-gray-800 hover:text-blue-800">Productos</a>
+      <a href="#contacto" class="text-gray-800 hover:text-blue-800">Contacto</a>
+    </nav>
+  </header>
+
+  <button id="theme-toggle" class="fixed top-4 right-4 bg-gray-200 p-2 rounded" aria-label="Cambiar tema">🌙</button>
+
+<div id="font-controls" class="fixed top-4 right-20 bg-gray-200 p-2 rounded space-x-2"><button id="font-increase">A+</button><button id="font-decrease">A-</button></div>
+  <section id="inicio" class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-24 text-center" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold">Aseguramos tu presente y tu futuro</h2>
+    <p class="text-lg mt-4">Soluciones reales en seguros para ti, tu familia y tu empresa.</p>
+  </section>
+
+  <section id="sobre" class="py-20 px-6 max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Sobre Nosotros</h2>
+    <p class="text-lg">En Segusocial trabajamos con las mejores aseguradoras del país para ofrecerte protección total, atención personalizada y respaldo en los momentos más importantes.</p>
+  </section>
+
+  <section id="servicios" class="bg-gray-50 py-20 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Nuestros Servicios</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">📋 Asesoría en seguros</div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">🔍 Comparación de pólizas</div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">🛠 Gestión de siniestros</div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">🔁 Renovaciones inteligentes</div>
+    </div>
+  </section>
+
+  <section id="productos" class="py-20 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Nuestros Productos</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">💙 Seguro de Vida</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">🩺 Seguro de Salud</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">🏠 Seguro de Hogar</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">🚗 Seguro de Automóvil</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">🏢 Seguro Empresarial</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">✈️ Seguro de Viajes</div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-gray-100 py-20 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">Cotiza tu seguro</h2>
+    <form id="formulario-whatsapp" class="max-w-xl mx-auto space-y-4">
+      <label for="nombre" class="block text-left">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" class="w-full p-3 rounded border border-gray-300" required>
+      <label for="ciudad" class="block text-left">Ciudad</label>
+      <input type="text" id="ciudad" placeholder="Ciudad" class="w-full p-3 rounded border border-gray-300" required>
+      <label for="celular" class="block text-left">Celular</label>
+      <input type="tel" id="celular" pattern="[0-9]{7,10}" placeholder="Celular" class="w-full p-3 rounded border border-gray-300" required>
+      <label for="seguro" class="block text-left">Seguro</label>
+      <select id="seguro" class="w-full p-3 rounded border border-gray-300" required>
+        <option value="">¿Qué seguro te interesa?</option>
+        <option value="SOAT">SOAT</option>
+        <option value="Todo riesgo">Todo riesgo</option>
+        <option value="Vida">Vida</option>
+        <option value="Salud">Salud</option>
+        <option value="Hogar">Hogar</option>
+        <option value="Viajes">Viajes</option>
+        <option value="Empresarial">Empresarial</option>
+        <option value="Mascotas">Mascotas</option>
+        <option value="Accidentes">Accidentes</option>
+      </select>
+      <label for="mensaje" class="block text-left">Mensaje</label>
+      <input type="text" id="mensaje" placeholder="¿Qué necesitas asegurar? (opcional)" class="w-full p-3 rounded border border-gray-300">
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 shadow">Enviar por WhatsApp</button>
+    </form>
+    <div id="mensaje-final" class="hidden mt-8">
+      <div class="bg-gradient-to-r from-green-400 via-blue-400 to-blue-600 border border-green-400 rounded-xl p-6 text-center flex flex-col items-center justify-center shadow-2xl animate-fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-green-700 mb-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m5 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+        </svg>
+        <span class="text-white font-extrabold text-2xl drop-shadow-lg">¡Solicitud enviada con éxito!</span>
+        <span class="text-white mt-2 text-lg">🎉 Gracias por confiar en <span class="font-bold text-green-200">Segusocial</span>. <br>Un asesor experto se pondrá en contacto contigo muy pronto para ayudarte a proteger lo que más quieres. 🚀</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="py-20 px-6 bg-white" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Testimonios</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <blockquote class="bg-gray-50 p-4 rounded shadow">"Excelente servicio y atención personalizada" - <cite>Laura M.</cite></blockquote>
+      <blockquote class="bg-gray-50 p-4 rounded shadow">"Me ayudaron a encontrar el seguro perfecto" - <cite>Carlos P.</cite></blockquote>
+    </div>
+  </section>
+
+  <section id="faq" class="bg-gray-50 py-20 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Preguntas Frecuentes</h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <details class="bg-white shadow-md rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-blue-700">¿Qué tipo de seguros ofrece Segusocial?</summary>
+        <p class="mt-2 text-gray-700">Ofrecemos seguros de vida, salud, hogar, automóvil, empresarial y más. Personalizamos cada plan según tus necesidades.</p>
+      </details>
+      <details class="bg-white shadow-md rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-blue-700">¿Cómo puedo cotizar un seguro?</summary>
+        <p class="mt-2 text-gray-700">Puedes hacerlo completando el formulario de contacto o escribiéndonos directamente por WhatsApp.</p>
+      </details>
+      <details class="bg-white shadow-md rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-blue-700">¿Qué respaldo tienen los seguros que venden?</summary>
+        <p class="mt-2 text-gray-700">Trabajamos con aseguradoras líderes en Colombia, lo que garantiza respaldo, agilidad y cobertura nacional.</p>
+      </details>
+      <details class="bg-white shadow-md rounded-lg p-4">
+        <summary class="cursor-pointer font-semibold text-blue-700">¿Ofrecen atención personalizada?</summary>
+        <p class="mt-2 text-gray-700">Sí, cada cliente cuenta con un asesor que lo acompaña durante todo el proceso: desde la cotización hasta el uso del seguro.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://wa.me/573168609126" target="_blank" class="bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition" aria-label="Abrir WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="w-6 h-6">
+    </a>
+  </div>
+
+  <div id="chatbot" class="fixed bottom-5 left-5 z-50">
+    <button id="chatbot-btn" class="bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg" aria-label="Abrir chatbot">¿Necesitas ayuda?</button>
+    <div id="chatbot-window" class="hidden bg-white border rounded-lg shadow-lg mt-2 p-4 w-72">
+      <div class="font-bold text-blue-700 mb-2">Chat Segusocial</div>
+      <div id="chatbot-messages" class="text-sm mb-2 h-24 overflow-y-auto"></div>
+      <input id="chatbot-input" type="text" placeholder="Escribe tu pregunta..." class="w-full border rounded px-2 py-1 mb-2" />
+      <button id="chatbot-send" class="bg-blue-600 text-white px-3 py-1 rounded">Enviar</button>
+    </div>
+  </div>
+
+  <section class="bg-white py-10 text-center">
+    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Síguenos en redes</h3>
+    <div class="space-x-4">
+      <a href="#" class="text-blue-600 hover:underline">Facebook</a>
+      <a href="#" class="text-pink-500 hover:underline">Instagram</a>
+      <a href="#" class="text-blue-700 hover:underline">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="bg-blue-800 text-white text-center py-6 space-y-2">
+    <p>&copy; 2025 Segusocial. Todos los derechos reservados.</p>
+    <a href="privacy.html" class="underline">Política de Privacidad</a> |
+    <a href="terms.html" class="underline">Términos de Uso</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+  <!-- Google Analytics placeholder -->
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</body>
+</html>
