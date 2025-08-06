@@ -55,4 +55,11 @@ sendChat.addEventListener('click', () => {
     }, 500);
 });
 
+chatInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        sendChat.click();
+    }
+});
+
 loadHistory();
